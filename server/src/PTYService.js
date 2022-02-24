@@ -25,8 +25,11 @@ class PTY {
         // Add a "data" event listener.
         this.ptyProcess.on("data", data => {
             // Whenever terminal generates any data, send that output to socket.io client to display on UI
-            this.sendToClient(data);
+            this.sendToClient('output', data);
         });
+        this.ptyProcess.onExit(() => {
+            this.sendToClient('exit', '')
+        })
     }
 
     /**
@@ -38,9 +41,9 @@ class PTY {
         this.ptyProcess.write(data);
     }
 
-    sendToClient(data) {
+    sendToClient(type, data) {
         // Emit data to socket.io client in an event "output"
-        this.socket.emit("output", data);
+        this.socket.emit(type, data);
     }
 }
 

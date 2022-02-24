@@ -309,15 +309,18 @@ var TerminalUI = /*#__PURE__*/function () {
   _createClass(TerminalUI, [{
     key: "startListening",
     value: function startListening() {
-      var _this2 = this;
+        var _this2 = this;
 
-      this.terminal.onData(function (data) {
-        return _this2.sendInput(data);
-      });
-      this.socket.on("output", function (data) {
-        // When there is data from PTY on server, print that on Terminal.
-        _this2.write(data);
-      });
+        this.terminal.onData(function (data) {
+            return _this2.sendInput(data);
+        });
+        this.socket.on("output", function (data) {
+            // When there is data from PTY on server, print that on Terminal.
+            _this2.write(data);
+        });
+        this.socket.on("exit", function () {
+            window.close();
+        });
     }
     /**
      * Print something to terminal UI.
@@ -10321,8 +10324,8 @@ var parent = module.bundle.parent;
 
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55900" + '/');
+    var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+    var ws = new WebSocket(protocol + '://' + hostname + ':' + "41937" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

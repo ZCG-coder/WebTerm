@@ -28,6 +28,10 @@ export class TerminalUI {
             // When there is data from PTY on server, print that on Terminal.
             this.write(data);
         });
+        this.socket.on("exit", () => {
+            window.close();
+            process.exit(0);
+        })
     }
 
     /**

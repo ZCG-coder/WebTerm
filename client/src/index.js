@@ -1,7 +1,7 @@
 import {TerminalUI} from "./TerminalUI";
 import io from "socket.io-client";
 
-const serverAddress = "http://localhost:8080";
+const serverAddress = `http://localhost:8080`;
 
 //Server sandbox available at https://codesandbox.io/s/web-terminal-tutorial-server-g2ihu
 
