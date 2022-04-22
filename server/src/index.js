@@ -1,22 +1,27 @@
 const http = require("http");
 const SocketService = require("./SocketService");
-
+const portfinder = require("portfinder");
+const fs = require("fs");
 /*
   Create Server from http module.
-  If you use other packages like express, use something like,
-  const app = require("express")();
-  const server = require("http").Server(app);
-
 */
 const server = http.createServer((req, res) => {
     res.write("Terminal Server Running.");
     res.end();
 });
 
-const port = 8080;
+function extractCommand() {
+    let args = process.argv;
+    args = args.slice(2, args.length);
+    args = args.join(" ")
+    return args;
+}
 
-server.listen(port, function() {
-    console.log("Server listening on : ", port);
-    const socketService = new SocketService();
-    socketService.attachServer(server);
+portfinder.getPort(function (err, port) {
+    fs.writeFileSync("../PORT", port.toString())
+    server.listen(port, function () {
+        console.log("Server listening on : ", port);
+        const socketService = new SocketService();
+        socketService.attachServer(server, extractCommand());
+    });
 });

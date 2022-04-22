@@ -1,22 +1,46 @@
+import $ from "jquery";
 import {Terminal} from "xterm";
 import "xterm/css/xterm.css";
 import {FitAddon} from "xterm-addon-fit/src/FitAddon";
-
+import fs from "fs";
+import JSON5 from "json5";
 
 export class TerminalUI {
     constructor(socket) {
-        this.terminal = new Terminal({
-            convertEol: true,
-            rendererType: "dom", // default is canvas
-        });
+        this.initializeTerminal();
         this.fit = new FitAddon();
         this.terminal.loadAddon(this.fit);
         this.socket = socket;
-        this.terminal.onResize(() => {
-            this.fit.fit();
+
+        $(window).resize(() => {
+            this.onResize();
         });
-        window.addEventListener('resize', () => {
-            this.fit.fit();})
+        $("#terminal-container").contextmenu((e) => {
+            e.preventDefault();
+            return false;  // The menu is actually useless
+        });
+    }
+
+    initializeTerminal() {
+        const configText = fs.readFileSync("../../../Config/general-settings.json").toString();
+        const configObject = JSON5.parse(configText);
+        this.terminal = new Terminal({
+            convertEol: true,
+            fontFamily: configObject["font"],
+            fontSize: configObject["fontSize"]
+        });
+    }
+
+    onResize() {
+        this.fit.fit();
+        const size = $("#size");
+        size.show();
+        let width = $(window).width();
+        let height = $(window).height();
+        size.text(`${width}x${height}`);
+        setTimeout(() => {
+            size.fadeOut();
+        }, 2000);
     }
 
     /**
@@ -29,9 +53,9 @@ export class TerminalUI {
             this.write(data);
         });
         this.socket.on("exit", () => {
+            window.isClosed = true;
             window.close();
-            process.exit(0);
-        })
+        });
     }
 
     /**

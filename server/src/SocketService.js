@@ -1,5 +1,5 @@
 // Manage Socket.IO server
-const PTYService = require("./PTYService");
+const PTY = require("./PTYService");
 
 const socketIO = require("socket.io");
 
@@ -9,7 +9,7 @@ class SocketService {
         this.pty = null;
     }
 
-    attachServer(server) {
+    attachServer(server, command) {
         if (!server) {
             throw new Error("Server not found...");
         }
@@ -27,10 +27,11 @@ class SocketService {
             });
 
             // Create a new pty service when client connects.
-            this.pty = new PTYService(this.socket);
+            this.pty = new PTY(this.socket, command);
 
             // Attach any event listeners which runs if any event is triggered from socket.io client
-            // For now, we are only adding "input" event, where client sends the strings you type on terminal UI.
+            // For now, we are only adding "input" event,
+            // where the client sends the strings you type on terminal UI.
             this.socket.on("input", input => {
                 //Runs this event function socket receives "input" events from socket.io client
                 this.pty.write(input);
