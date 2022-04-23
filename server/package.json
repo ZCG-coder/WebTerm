@@ -11,7 +11,7 @@
     "dependencies": {
         "node-pty": "0.9.0",
         "portfinder": "^1.0.28",
-        "socket.io": "2.3.0"
+        "socket.io": "2.4.0"
     },
     "keywords": []
 }
