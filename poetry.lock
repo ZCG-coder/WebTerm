@@ -1,0 +1,49 @@
+[[package]]
+name = "netifaces"
+version = "0.10.6"
+description = "Portable network interface information."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "socketio"
+version = "0.2.1"
+description = ""
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+netifaces = "0.10.6"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "6d134d3e1c1b4b345468291b3e35abbcdac570c72a0f46c23bd04370568b9a1a"
+
+[metadata.files]
+netifaces = [
+    {file = "netifaces-0.10.6-cp27-cp27m-win32.whl", hash = "sha256:137a77c2e0a68a3e409a532fe73340c3df6a59ffe8eb565ec8b1f0a131402d09"},
+    {file = "netifaces-0.10.6-cp27-cp27m-win_amd64.whl", hash = "sha256:ef223d45b73cc96c25a6295f471106b3195d2367b7f153e43490673d89e9240e"},
+    {file = "netifaces-0.10.6-cp34-cp34m-win32.whl", hash = "sha256:4ddf0f329d83516bba096b7eb1ad2ee354a98e2483f89ad3a590e653ece963c8"},
+    {file = "netifaces-0.10.6-cp34-cp34m-win_amd64.whl", hash = "sha256:61fd2706de21aac11475c921ba0fd98af19d5280702a11c5c8e2e910765dc378"},
+    {file = "netifaces-0.10.6-cp35-cp35m-win32.whl", hash = "sha256:48275e627ce9220acfed2e1ca1e4cf01f58940412f2aebac7995750b50232701"},
+    {file = "netifaces-0.10.6-cp35-cp35m-win_amd64.whl", hash = "sha256:f8b352247ae4b6731192d33fd35b27f247e3e4618a2d5cf65de41d46bbb53223"},
+    {file = "netifaces-0.10.6-py2.7-win-amd64.egg", hash = "sha256:8c3a2c7d573511507f0f29c9d1a28ce1b2a958b8d0d7a1b1966c6fd0fa5d2953"},
+    {file = "netifaces-0.10.6-py2.7-win32.egg", hash = "sha256:a0c7c19e1fb62ac6018582f72d15ac056e75c3d2ab222fb25369e7766ed67453"},
+    {file = "netifaces-0.10.6-py3.4-win-amd64.egg", hash = "sha256:3b19bf224b3e46c62f5f5e65a9fbd2e9731cda09289c76aca110a3dbdf0c3332"},
+    {file = "netifaces-0.10.6-py3.4-win32.egg", hash = "sha256:5a0114933657eebe4985fdf7b0099a27ec75501901000770addca6ad7bd23008"},
+    {file = "netifaces-0.10.6-py3.5-win-amd64.egg", hash = "sha256:7925add91982cb689963cc28fb8718c006f7713b527d262e32b29b4491cec295"},
+    {file = "netifaces-0.10.6-py3.5-win32.egg", hash = "sha256:2245677ee3aa1244bbd0fbf3d6e0158d38b612eba406e7be9639e7efe0371bfa"},
+    {file = "netifaces-0.10.6.tar.gz", hash = "sha256:0c4da523f36d36f1ef92ee183f2512f3ceb9a9d2a45f7d19cda5a42c6689ebe0"},
+    {file = "netifaces-0.10.6.win-amd64-py2.7.exe", hash = "sha256:60f25e5b6d2a682a394c87a6d2bf4d38c8dd8999ee32b955af88ceccaef7fe93"},
+    {file = "netifaces-0.10.6.win-amd64-py3.4.exe", hash = "sha256:c455ca29737bf9b298408fd78a48f8fc6ddaa1f50a6eb92d814a8874412c631b"},
+    {file = "netifaces-0.10.6.win-amd64-py3.5.exe", hash = "sha256:369eb616a6c844987bd4df486bb5f591aa0d5552378c6831f56ed81cfc228cab"},
+    {file = "netifaces-0.10.6.win32-py2.7.exe", hash = "sha256:337f0fae970ab7a9acf5690516f7c7795f41934350cc1e8ad33c5c0331904ac0"},
+    {file = "netifaces-0.10.6.win32-py3.4.exe", hash = "sha256:563a18f942a9c9f64eed27fe2a1b3dfb5866a440cdaf4d833213798699cc1789"},
+    {file = "netifaces-0.10.6.win32-py3.5.exe", hash = "sha256:88d8fa4fcccaca07519141e95b42f52fb650bed2e8f5b29c44e22968b92b7097"},
+]
+socketio = [
+    {file = "socketio-0.2.1.tar.gz", hash = "sha256:dee5abde39c6021d9d1874582479a4e7f8a8352b38bc7731fb6b27b76976f62c"},
+]

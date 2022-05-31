@@ -1,0 +1,16 @@
+{
+  "name": "terminal",
+  "version": "1.0.0",
+  "description": "A terminal pty interface for Python",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andy Zhang",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "node-pty": "^0.10.1",
+    "socket.io": "^4.5.1"
+  }
+}

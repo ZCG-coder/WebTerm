@@ -4,72 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c6064a4-c057-48ef-bfd4-72409ad7ebcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/WebTerm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PORT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TerminalUi/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TerminalUi/.idea/TerminalUi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TerminalUi/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TerminalUi/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TerminalUi/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TerminalUi/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TerminalUi/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TerminalUi/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TerminalUi/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TerminalUi/term.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/src.6c5ec30d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/src.6c5ec30d.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/src.76e2bf5d.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/src.76e2bf5d.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/src.ec4f840e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/src.ec4f840e.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/style.6a87548e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/style.6a87548e.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/server-linux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/server-macos" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/server-win.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/src.a2b27638.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/src.a2b27638.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/src.a2b27638.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/src.a2b27638.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/style.e308ff8e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/style.e308ff8e.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/style.e308ff8e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/style.e308ff8e.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/TerminalUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/TerminalUI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/term_server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/PTYService.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/PTYService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/SocketService.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/SocketService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="8c6064a4-c057-48ef-bfd4-72409ad7ebcd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +31,6 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/TerminalUi/main.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/client/index.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/server/src/PTYService.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/server/src/SocketService.js" root0="FORCE_HIGHLIGHTING" />
@@ -116,11 +50,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   },
   "keyToStringList": {
@@ -244,6 +181,7 @@
       <workItem from="1649920909042" duration="34000" />
       <workItem from="1649921191234" duration="7314000" />
       <workItem from="1650065495004" duration="4744000" />
+      <workItem from="1653986573043" duration="596000" />
     </task>
     <servers />
   </component>
@@ -265,8 +203,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WebTerm$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1650067890931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/WebTerm$tkinter_.coverage" NAME="tkinter_ Coverage Results" MODIFIED="1650069884070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../venv/lib/python3.9/site-packages/cefpython3/examples" />
+    <SUITE FILE_PATH="coverage/WebTerm$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1650067890931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/WebTerm$main.coverage" NAME="main Coverage Results" MODIFIED="1649975920801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TerminalUi" />
   </component>
 </project>
