@@ -5,12 +5,28 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
+            "command": "npm start",
+            "name": "Run npm start",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "Python: Start Client",
             "type": "python",
             "request": "launch",
-            "program": "${folder}/binding.py",
+            "program": "${workspaceFolder}/binding.py",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "Start Node.js Server",
+            "program": "${workspaceFolder}/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "console": "integratedTerminal"
         }
     ]
 }

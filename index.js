@@ -1,41 +1,28 @@
+/**
+ * @author Andy Zhang
+ * Starts a Pty Server on a port
+ */
+
 const Server = require("socket.io").Server;
-const os = require('os');
-const pty = require('node-pty');
+const startProcess = require("./startProcess").startProcess;
 
-const shell = 'bash';
-
-function startProcess() {
-    const ptyProcess = pty.spawn(shell, [], {
-        name: 'xterm-color',
-        cols: 80,
-        rows: 30,
-        cwd: process.env.HOME,
-        env: process.env
-    });
-
-    ptyProcess.on('data', function(data) {
-        process.stdout.write(data)
-    })
-
-    ptyProcess.onExit(function() {
-        process.exit();
-    });
-
-    return ptyProcess;
-}
-
-const ptyProcess = startProcess();
 const io = new Server(3000);
 
 io.on('connection', (socket) => {
+    let ptyProcess = startProcess();
     console.log('Connected');
     socket.on('disconnect', () => {
         console.log('Disconnected');
+        process.exit();
+    });
+
+    socket.on('input', function (data) {
+        console.log("Received input");
+        ptyProcess.write(data);
+    });
+
+    ptyProcess.onData(function (data) {
+        console.log("Received output from pty");
+        socket.emit("out", data);
     });
 });
-
-io.on('input', function(data) {
-    ptyProcess.write(data);
-});
-
-ptyProcess
