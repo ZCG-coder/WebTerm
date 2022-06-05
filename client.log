@@ -1,1 +1,12 @@
 INFO:Terminal Client:Connecting...
+ERROR:engineio.client:disconnect handler error
+Traceback (most recent call last):
+  File "/Users/andy/Library/Caches/pypoetry/virtualenvs/terminal-5wrHdAdc-py3.10/lib/python3.10/site-packages/engineio/client.py", line 540, in _trigger_event
+    return self.handlers[event](*args)
+  File "/Users/andy/Library/Caches/pypoetry/virtualenvs/terminal-5wrHdAdc-py3.10/lib/python3.10/site-packages/socketio/client.py", line 721, in _handle_eio_disconnect
+    self._trigger_event('disconnect', namespace=n)
+  File "/Users/andy/Library/Caches/pypoetry/virtualenvs/terminal-5wrHdAdc-py3.10/lib/python3.10/site-packages/socketio/client.py", line 629, in _trigger_event
+    return self.handlers[namespace][event](*args)
+  File "/Users/andy/Documents/Projects/WebTerm/client.py", line 31, in disconnect
+    sys.exit(0)
+SystemExit: 0

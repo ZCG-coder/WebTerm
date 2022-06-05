@@ -2,6 +2,7 @@
 
 import logging
 import sys
+
 import socketio
 
 sio = socketio.Client()
@@ -21,7 +22,7 @@ def connect():
 @sio.on("out")
 def out(data):
     """Receive output, then write to a file"""
-    with open("output", "w", encoding="utf-8") as f:
+    with open("output", "w") as f:
         f.write(data)
 
 

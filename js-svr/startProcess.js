@@ -1,11 +1,15 @@
+/**
+ * Starts a PTY process using the system-defined shell
+ * @author Andy Zhang
+ */
 const pty = require("node-pty");
 
-const shell = process.shell;
+const shell = process.env.SHELL;
 
 function startProcess() {
     /**
      * Starts a Psedo-terminal process
-     * @returns {pty.IPty} Process
+     * @returns {pty.IPty} The PTY process
      */
     const ptyProcess = pty.spawn(shell, [], {
         name: 'xterm-color',
@@ -19,4 +23,5 @@ function startProcess() {
 
     return ptyProcess;
 }
+
 module.exports = { startProcess };

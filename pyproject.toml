@@ -10,10 +10,11 @@ python-socketio = {extras = ["client"], version = "^5.6.0"}
 
 [tool.poetry.dev-dependencies]
 black = {version = "^22.3.0", allow-prereleases = true}
+ipykernel = "^6.13.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pylint."MESSAGES CONTROL"]
-disable="E0401"
+disable="E0401, C0103, W1514"
