@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/andy/Documents/Projects/WebTerm'
+make: Leaving directory `/Users/andy/Documents/Projects/WebTerm'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

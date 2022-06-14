@@ -7,6 +7,7 @@ authors = ["Andy Zhang <z-c-ge@outlook.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 python-socketio = {extras = ["client"], version = "^5.6.0"}
+watchdog = "^2.1.8"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^22.3.0", allow-prereleases = true}
